@@ -56,7 +56,7 @@ class User < ActiveRecord::Base
     @want.destroy if @want
   end
 
-  #def want?(item)
-   # Want.include?(item)
-  #end
+  def want?(item)
+    Want.include?(item)
+  end
 end
